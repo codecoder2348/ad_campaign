@@ -14,13 +14,12 @@ Sqlite (Embedded database)
 
 Steps to run the project:
 
-1. Clone/download the project repository from github.
+1.  Clone/download the project repository from github.
 
-2. At first check whether Python is installed or not:
+2.  At first check whether Python is installed or not :
 
-Check it by running command : python --version
-
-if it is not installed then download and install Python
+Check it by running command : python –version
+, if it is not installed then download and install      Python
 
 3. Download Pycharm IDE (Professional version)
 
@@ -44,13 +43,16 @@ if it is not installed then download and install Python
 
 Description about the rest calls:
 
-url(r'^admin/', include(admin.site.urls))
+a) url(r'^admin/', include(admin.site.urls))
 
 on browser hit : localhost:8000/admin
 
 This will redirect to django default admin page over which admin operations can be performed.
 
-url(r'^users/', views.UserList.as_view()),
+
+
+
+b) url(r'^users/', views.UserList.as_view()),
 
 Hit : localhost:8000/users
 
@@ -83,7 +85,7 @@ Provides a form to post/add campaigns in JSON structure :
  }
 
 
-url(r'^index/(?P<partner_id>.*)/$', views.UserDetail.as_view()) 
+c) url(r'^index/(?P<partner_id>.*)/$', views.UserDetail.as_view()) 
 
 Hit : localhost:8000/index/A67  
 
@@ -98,7 +100,6 @@ Example for response :
 Note : In place of A67 provide any partner id
 
 Response ad campaign for particular partner id if campaign is active
-
 
 
 
